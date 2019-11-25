@@ -1,0 +1,6 @@
+R_DEF: Internal format may change without notice
+local
+attr? minTextSize
+attr? precision
+attr? sizeToFit
+styleable AutofitTextView minTextSize precision sizeToFit

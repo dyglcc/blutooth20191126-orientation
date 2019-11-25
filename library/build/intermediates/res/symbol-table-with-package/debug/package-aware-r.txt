@@ -1,0 +1,5 @@
+me.grantland.widget
+attr minTextSize
+attr precision
+attr sizeToFit
+styleable AutofitTextView minTextSize precision sizeToFit
