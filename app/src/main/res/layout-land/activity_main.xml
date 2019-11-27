@@ -109,9 +109,8 @@
 
             <Button
                 android:id="@+id/Button_PointOfFailureThat"
-                android:layout_width="wrap_content"
+                android:layout_width="110dp"
                 android:layout_height="45dp"
-                android:layout_weight="1"
                 android:background="@drawable/yellow"
                 android:text="@string/Button_PointOfFailureThat"
                 android:textSize="13sp" />
@@ -120,9 +119,8 @@
 
             <Button
                 android:id="@+id/Button_StateIsRead"
-                android:layout_width="wrap_content"
+                android:layout_width="110dp"
                 android:layout_height="45dp"
-                android:layout_weight="1"
                 android:background="@drawable/yellow"
                 android:text="@string/Button_StateIsRead"
                 android:textSize="15sp" />
@@ -130,9 +128,8 @@
 
             <Button
                 android:id="@+id/Button_SetAll"
-                android:layout_width="wrap_content"
+                android:layout_width="110dp"
                 android:layout_height="45dp"
-                android:layout_weight="1"
                 android:background="@drawable/yellow"
                 android:text="@string/Button_SetAll"
                 android:textSize="15sp" />
@@ -140,9 +137,8 @@
 
             <Button
                 android:id="@+id/Button_ClearAll"
-                android:layout_width="wrap_content"
+                android:layout_width="110dp"
                 android:layout_height="45dp"
-                android:layout_weight="1"
                 android:background="@drawable/yellow"
                 android:text="@string/Button_ClearAll"
                 android:textSize="15sp" />
@@ -157,9 +153,8 @@
 
             <Button
                 android:id="@+id/Button_Mode_Teach02"
-                android:layout_width="wrap_content"
+                android:layout_width="110dp"
                 android:layout_height="45dp"
-                android:layout_weight="1"
                 android:background="@drawable/yellow"
                 android:text="@string/Button_Mode_Teach"
                 android:textSize="13sp" />
@@ -168,9 +163,8 @@
 
             <Button
                 android:id="@+id/Button_an02"
-                android:layout_width="wrap_content"
+                android:layout_width="110dp"
                 android:layout_height="45dp"
-                android:layout_weight="1"
                 android:background="@drawable/yellow"
                 android:text="@string/Button_StateIsRead"
                 android:textSize="15sp"
@@ -179,9 +173,8 @@
 
             <Button
                 android:id="@+id/Button_an03"
-                android:layout_width="wrap_content"
+                android:layout_width="110dp"
                 android:layout_height="45dp"
-                android:layout_weight="1"
                 android:background="@drawable/yellow"
                 android:text="@string/Button_SetAll"
                 android:textSize="15sp"
@@ -190,9 +183,8 @@
 
             <Button
                 android:id="@+id/Button_an04"
-                android:layout_width="wrap_content"
+                android:layout_width="110dp"
                 android:layout_height="45dp"
-                android:layout_weight="1"
                 android:background="@drawable/yellow"
                 android:text="@string/Button_ClearAll"
                 android:textSize="15sp"

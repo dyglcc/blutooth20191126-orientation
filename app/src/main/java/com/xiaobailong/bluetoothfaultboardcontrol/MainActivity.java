@@ -388,6 +388,10 @@ public class MainActivity extends BaseActivity implements OnClickListener,
 
     public static ArrayList<String> getDirFilesDir(File file) {
         ArrayList<String> list = new ArrayList<String>();
+
+        if(file == null || file.listFiles() == null){
+            return list;
+        }
         for (File f : file.listFiles()) {
             list.add(f.getAbsolutePath());
         }

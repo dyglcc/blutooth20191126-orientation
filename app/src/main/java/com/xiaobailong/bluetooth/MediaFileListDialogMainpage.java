@@ -63,7 +63,7 @@ public class MediaFileListDialogMainpage extends Dialog
 
     public static ArrayList<String> getDirFilesDir(File file) {
         ArrayList<String> list = new ArrayList<String>();
-        if (file == null) {
+        if (file == null || file.listFiles() == null) {
             return list;
         }
         for (File f : file.listFiles()) {
@@ -138,7 +138,8 @@ public class MediaFileListDialogMainpage extends Dialog
 
 //    private void inputData(File file) {
 //        try {
-//            BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file), "GBK"));
+//            BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream
+//            (file), "GBK"));
 //            String line = null;
 //            //int index=0;
 //            while ((line = br.readLine()) != null) {
@@ -160,7 +161,8 @@ public class MediaFileListDialogMainpage extends Dialog
     private List<FaultBean> readFile(File file) {
         List<FaultBean> list = new ArrayList<>();
         try {
-            BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file), "GBK"));
+            BufferedReader br =
+                    new BufferedReader(new InputStreamReader(new FileInputStream(file), "GBK"));
             String line = null;
             //int index=0;
             while ((line = br.readLine()) != null) {

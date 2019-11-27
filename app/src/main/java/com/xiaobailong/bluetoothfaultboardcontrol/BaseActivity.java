@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.StrictMode;
 
 import com.xiaobailong.tools.ConstValue;
 
@@ -19,6 +20,8 @@ public class BaseActivity extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
+        StrictMode.setVmPolicy(builder.build());
         SharedPreferences sharedPreferences = this.getSharedPreferences(ConstValue.SP_NAME,0);
                int orentation = sharedPreferences.getInt(ConstValue.xbl_orentation,1);
                setRequestedOrientation(orentation);
