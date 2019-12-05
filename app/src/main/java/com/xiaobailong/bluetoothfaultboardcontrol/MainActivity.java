@@ -2,7 +2,9 @@ package com.xiaobailong.bluetoothfaultboardcontrol;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
@@ -310,7 +312,7 @@ public class MainActivity extends BaseActivity implements OnClickListener,
         // 故障点说明
         findViewById(R.id.Button_PointOfFailureThat).setOnClickListener(this);
         // 状态读取
-        findViewById(R.id.Button_StateIsRead).setOnClickListener(this);
+//        findViewById(R.id.Button_StateIsRead).setOnClickListener(this);
         // 全部设置
         findViewById(R.id.Button_SetAll).setOnClickListener(this);
         // 全部清除
@@ -352,9 +354,9 @@ public class MainActivity extends BaseActivity implements OnClickListener,
                 MediaFileListDialogMainpage page = new MediaFileListDialogMainpage(this);
                 page.show();
                 break;
-            case R.id.Button_StateIsRead:// 状态读取
-                faultboardOption.stateIsRead(R.id.Button_StateIsRead);
-                break;
+//            case R.id.Button_StateIsRead:// 状态读取
+//                faultboardOption.stateIsRead(R.id.Button_StateIsRead);
+//                break;
             case R.id.Button_SetAll:// 全部设置
                 faultboardOption.setAll(R.id.Button_SetAll);
                 break;
@@ -468,9 +470,18 @@ public class MainActivity extends BaseActivity implements OnClickListener,
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (event.getKeyCode() == KeyEvent.KEYCODE_BACK) {
-            Toast.makeText(this, getString(R.string.Button_Back_BeCanceled),
-                    Toast.LENGTH_SHORT).show();
-            return true;
+                    new AlertDialog.Builder(this).setMessage("确定退出?").setPositiveButton("确定",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    finish();
+                                }
+                            }).setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                        }
+                    }).create().show();
         }
         return super.onKeyDown(keyCode, event);
     }

@@ -10,7 +10,7 @@
     <string name="TheFailurePointSet">故障点设置</string>
     <string name="Button_PointOfFailureThat">故障点说明</string>
     <string name="Button_Mode_Teach">教学模式</string>
-    <string name="Button_StateIsRead">状态读取</string>
+<!--    <string name="Button_StateIsRead">状态读取</string>-->
     <string name="Button_SetAll">全部设置</string>
     <string name="Button_ClearAll">全部清除</string>
     <string name="Back">返回</string>
